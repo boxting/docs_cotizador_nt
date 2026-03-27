@@ -1,6 +1,13 @@
-# El directorio site/ es generado por CI y commiteado automaticamente
-# No ignorar site/ para que GitHub Pages lo sirva desde main/root
+# Python
 __pycache__/
 *.pyc
 .venv/
 venv/
+
+# site/ is built by CI and committed to main so GitHub Pages can serve it.
+# Ignore vendored theme assets that never change between content edits.
+site/css/fonts/
+site/js/html5shiv.min.js
+site/js/jquery-3.6.0.min.js
+site/js/theme.js
+site/js/theme_extra.js
