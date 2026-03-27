@@ -5,6 +5,7 @@ site_url: https://boxting.github.io/docs_cotizador_nt/
 
 repo_name: boxting/docs_cotizador_nt
 repo_url: https://github.com/boxting/docs_cotizador_nt
+edit_uri: edit/main/docs/
 
 docs_dir: docs
 site_dir: site

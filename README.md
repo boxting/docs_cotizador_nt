@@ -83,7 +83,7 @@ En **Settings → Pages** del repositorio, configurar:
 |---|---|
 | Source | `Deploy from a branch` |
 | Branch | `main` |
-| Folder | `/ (root)` |
+| Folder | `/site` |
 
 > El directorio `site/` generado por CI es el que GitHub Pages sirve como raiz del sitio.
 
