@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Boxting Labs" /><link rel="canonical" href="https://boxting.github.io/docs_cotizador_nt/cotizacion/listado/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Listado de Cotizaciones - New Transport Quoter — Manual de Usuario</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Listado de Cotizaciones";
+        var mkdocs_page_input_path = "cotizacion/listado.md";
+        var mkdocs_page_url = "/docs_cotizador_nt/cotizacion/listado/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> New Transport Quoter — Manual de Usuario
+        </a>
+        <div class="version">
+          2026.03.27
+        </div><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Inicio</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../alcance/">Alcance</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../perfiles/">Perfiles de Usuario</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../acceso/">Acceso al Sistema</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../navegacion/">Navegacion General</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Modulo de Cotizacion</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Listado de Cotizaciones</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#filtrar-por-cliente">Filtrar por cliente</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#filtrar-por-estado">Filtrar por estado</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#filtrar-por-tarifas-expiradas">Filtrar por tarifas expiradas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#limpiar-filtros-activos">Limpiar filtros activos</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#crear-nueva-cotizacion">Crear nueva cotizacion</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../acciones/">Acciones por Cotizacion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../crear/">Crear Nueva Cotizacion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ver/">Ver Cotizacion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pdf/">Generar PDF</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Variables de Cotizacion (Tarifas)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tarifas/funciones-comunes/">Funciones Comunes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tarifas/crear-editar/">Crear y Editar Tarifa</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../maestros/">Base de Datos Maestros</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../validaciones/">Mensajes y Validaciones</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../buenas-practicas/">Buenas Practicas</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../control-cambios/">Control de Cambios</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">New Transport Quoter — Manual de Usuario</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Modulo de Cotizacion</li>
+      <li class="breadcrumb-item active">Listado de Cotizaciones</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/boxting/docs_cotizador_nt/edit/master/docs/cotizacion/listado.md">Edit on boxting/docs_cotizador_nt</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="listado-de-cotizaciones">Listado de Cotizaciones<a class="headerlink" href="#listado-de-cotizaciones" title="Permanent link">&para;</a></h1>
+<p>Desde esta vista se puede filtrar y gestionar el universo de cotizaciones registradas.</p>
+<h2 id="filtrar-por-cliente">Filtrar por cliente<a class="headerlink" href="#filtrar-por-cliente" title="Permanent link">&para;</a></h2>
+<p><img alt="Filtro por cliente" src="../../img/image8.png" /></p>
+<p><img alt="Selector de cliente" src="../../img/image9.png" /></p>
+<p>El campo de busqueda permite localizar cualquier cliente disponible en el sistema.</p>
+<p><img alt="Busqueda de cliente" src="../../img/image10.png" /></p>
+<h2 id="filtrar-por-estado">Filtrar por estado<a class="headerlink" href="#filtrar-por-estado" title="Permanent link">&para;</a></h2>
+<p>Los estados disponibles son <strong>Generado</strong>, <strong>Aprobado</strong> y <strong>Rechazado</strong>.</p>
+<p><img alt="Filtro por estado" src="../../img/image11.png" /></p>
+<p><img alt="Selector de estado" src="../../img/image12.png" /></p>
+<p><img alt="Opciones de estado disponibles" src="../../img/image13.png" /></p>
+<h2 id="filtrar-por-tarifas-expiradas">Filtrar por tarifas expiradas<a class="headerlink" href="#filtrar-por-tarifas-expiradas" title="Permanent link">&para;</a></h2>
+<p><img alt="Filtro de tarifas expiradas" src="../../img/image14.png" /></p>
+<p><img alt="Vista con tarifas expiradas" src="../../img/image15.png" /></p>
+<p><img alt="Resultado de filtro de expiracion" src="../../img/image16.png" /></p>
+<h2 id="limpiar-filtros-activos">Limpiar filtros activos<a class="headerlink" href="#limpiar-filtros-activos" title="Permanent link">&para;</a></h2>
+<p><img alt="Boton limpiar filtros" src="../../img/image17.png" /></p>
+<h2 id="crear-nueva-cotizacion">Crear nueva cotizacion<a class="headerlink" href="#crear-nueva-cotizacion" title="Permanent link">&para;</a></h2>
+<p>El boton se encuentra en la parte superior derecha del listado.</p>
+<p><img alt="Boton crear cotizacion" src="../../img/image18.png" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../navegacion/" class="btn btn-neutral float-left" title="Navegacion General"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../acciones/" class="btn btn-neutral float-right" title="Acciones por Cotizacion">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/boxting/docs_cotizador_nt" class="fa fa-code-fork" style="color: #fcfcfc"> boxting/docs_cotizador_nt</a>
+        </span>
+    
+    
+      <span><a href="../../navegacion/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../acciones/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
