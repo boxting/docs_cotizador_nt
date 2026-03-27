@@ -1,0 +1,37 @@
+name: Deploy MkDocs to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    name: Build and deploy documentation
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Bump version in docs (date-based)
+        run: |
+          VERSION=$(date -u +"%Y.%m.%d")
+          echo "Updating version to $VERSION"
+          sed -i "s|<!-- VERSION -->.*<!-- /VERSION -->|<!-- VERSION -->${VERSION}<!-- /VERSION -->|g" docs/index.md
+          sed -i "s|^  version: .*|  version: \"${VERSION}\"|" mkdocs.yml
+
+      - name: Build and deploy
+        run: mkdocs gh-deploy --force --clean
