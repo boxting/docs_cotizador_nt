@@ -33,5 +33,13 @@ jobs:
           sed -i "s|<!-- VERSION -->.*<!-- /VERSION -->|<!-- VERSION -->${VERSION}<!-- /VERSION -->|g" docs/index.md
           sed -i "s|^  version: .*|  version: \"${VERSION}\"|" mkdocs.yml
 
-      - name: Build and deploy
-        run: mkdocs gh-deploy --force --clean
+      - name: Build site
+        run: mkdocs build --clean
+
+      - name: Commit built site to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add site/ docs/index.md mkdocs.yml
+          git diff --cached --quiet || git commit -m "ci: actualizar sitio y version [skip ci]"
+          git push

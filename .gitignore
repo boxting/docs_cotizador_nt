@@ -1,4 +1,5 @@
-site/
+# El directorio site/ es generado por CI y commiteado automaticamente
+# No ignorar site/ para que GitHub Pages lo sirva desde main/root
 __pycache__/
 *.pyc
 .venv/
