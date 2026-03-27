@@ -13,13 +13,21 @@ Documentacion oficial del sistema de cotizacion de transporte de carga, generada
 
 ## Ejecucion local
 
-### 1. Instalar dependencias
+### 1. Crear y activar un entorno virtual
+
+```bash
+python -m venv venv
+source venv/bin/activate   # macOS/Linux
+# venv\Scripts\activate    # Windows
+```
+
+### 2. Instalar dependencias
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Levantar el servidor de desarrollo
+### 3. Levantar el servidor de desarrollo
 
 ```bash
 mkdocs serve
@@ -28,7 +36,7 @@ mkdocs serve
 El sitio estara disponible en [http://localhost:8000](http://localhost:8000).
 Los cambios en los archivos `docs/` se recargan automaticamente.
 
-### 3. Generar el sitio estatico (opcional)
+### 4. Generar el sitio estatico (opcional)
 
 ```bash
 mkdocs build --clean
