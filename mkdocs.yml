@@ -6,6 +6,9 @@ site_url: https://boxting.github.io/docs_cotizador_nt/
 repo_name: boxting/docs_cotizador_nt
 repo_url: https://github.com/boxting/docs_cotizador_nt
 
+docs_dir: docs
+site_dir: site
+
 theme:
   name: readthedocs
   highlightjs: true
