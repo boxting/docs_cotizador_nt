@@ -1,6 +1,6 @@
 # Manual de Usuario — New Transport Quoter
 
-**Version:** <!-- VERSION -->1.0.0<!-- /VERSION -->
+**Version:** <!-- VERSION -->2026.03.27<!-- /VERSION -->
 **Fecha:** 24 de marzo de 2026
 **Elaborado por:** Boxting Labs
 
