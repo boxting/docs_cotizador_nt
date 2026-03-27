@@ -1,0 +1,43 @@
+site_name: New Transport Quoter — Manual de Usuario
+site_description: Documentacion oficial del sistema de cotizacion de transporte de carga
+site_author: Boxting Labs
+site_url: https://boxting.github.io/docs_cotizador_nt/
+
+repo_name: boxting/docs_cotizador_nt
+repo_url: https://github.com/boxting/docs_cotizador_nt
+
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - rust
+
+extra:
+  version: "1.0.0"
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Inicio: index.md
+  - Alcance: alcance.md
+  - Perfiles de Usuario: perfiles.md
+  - Acceso al Sistema: acceso.md
+  - Navegacion General: navegacion.md
+  - Modulo de Cotizacion:
+      - Listado de Cotizaciones: cotizacion/listado.md
+      - Acciones por Cotizacion: cotizacion/acciones.md
+      - Crear Nueva Cotizacion: cotizacion/crear.md
+      - Ver Cotizacion: cotizacion/ver.md
+      - Generar PDF: cotizacion/pdf.md
+  - Variables de Cotizacion (Tarifas):
+      - Funciones Comunes: tarifas/funciones-comunes.md
+      - Crear y Editar Tarifa: tarifas/crear-editar.md
+  - Base de Datos Maestros: maestros.md
+  - Mensajes y Validaciones: validaciones.md
+  - Buenas Practicas: buenas-practicas.md
+  - Control de Cambios: control-cambios.md
