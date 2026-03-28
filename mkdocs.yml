@@ -3,19 +3,31 @@ site_description: Documentacion oficial del sistema de cotizacion de transporte 
 site_author: Boxting Labs
 site_url: https://boxting.github.io/docs_cotizador_nt/
 
-repo_name: boxting/docs_cotizador_nt
-repo_url: https://github.com/boxting/docs_cotizador_nt
-edit_uri: edit/main/docs/
-
 docs_dir: docs
 site_dir: site
 
 theme:
-  name: readthedocs
-  highlightjs: true
-  hljs_languages:
-    - yaml
-    - rust
+  name: material
+  language: es
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
 
 extra:
   version: "2026.03.27"
@@ -25,6 +37,10 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.details
 
 nav:
   - Inicio: index.md
