@@ -1,0 +1,121 @@
+/* ── Dark Blue theme for ReadTheDocs MkDocs ── */
+
+/* Sidebar / navigation */
+.wy-side-nav-search {
+  background-color: #0d1642 !important;
+}
+
+.wy-nav-side {
+  background-color: #1a237e !important;
+}
+
+.wy-menu-vertical a,
+.wy-menu-vertical li.current > a,
+.wy-menu-vertical li.toctree-l1.current > a {
+  color: #c5cae9 !important;
+  border-color: #283593 !important;
+}
+
+.wy-menu-vertical a:hover,
+.wy-menu-vertical li.current > a:hover {
+  background-color: #283593 !important;
+  color: #ffffff !important;
+}
+
+.wy-menu-vertical li.current {
+  background-color: #1a237e !important;
+}
+
+.wy-menu-vertical li.toctree-l2.current > a,
+.wy-menu-vertical li.toctree-l2.current li.toctree-l3 > a {
+  background-color: #0d1642 !important;
+}
+
+.wy-side-nav-search input[type="text"] {
+  border-color: #283593 !important;
+}
+
+/* Top header bar */
+.wy-nav-top {
+  background-color: #0d1642 !important;
+}
+
+/* Links */
+.wy-body-for-nav a,
+.rst-content a {
+  color: #1565c0;
+}
+
+.wy-body-for-nav a:hover,
+.rst-content a:hover {
+  color: #0d47a1;
+}
+
+/* Breadcrumb bar */
+.wy-nav-content-wrap .wy-nav-content .rst-content .section li > a {
+  color: #1565c0;
+}
+
+/* Admonitions */
+.rst-content .note {
+  background-color: #e8eaf6;
+}
+
+.rst-content .note .admonition-title {
+  background-color: #1a237e;
+}
+
+.rst-content .warning .admonition-title {
+  background-color: #e65100;
+}
+
+.rst-content .tip .admonition-title {
+  background-color: #1b5e20;
+}
+
+/* Code blocks */
+.rst-content code {
+  background-color: #e8eaf6;
+  border: 1px solid #c5cae9;
+  color: #1a237e;
+}
+
+/* Tables */
+.rst-content table.docutils thead {
+  background-color: #1a237e;
+  color: #ffffff;
+}
+
+.rst-content table.docutils thead th {
+  color: #ffffff;
+}
+
+/* Footer */
+footer {
+  background-color: #0d1642 !important;
+  color: #c5cae9 !important;
+}
+
+footer a {
+  color: #90caf9 !important;
+}
+
+/* Version label in sidebar */
+.wy-side-nav-search > div.version {
+  color: #90caf9 !important;
+}
+
+/* Current page highlight */
+.wy-menu-vertical li.current a {
+  border-right-color: #448aff !important;
+}
+
+/* Scrollbar for sidebar */
+.wy-nav-side::-webkit-scrollbar-thumb {
+  background-color: #283593;
+}
+
+/* Search highlight */
+.rst-content .highlighted {
+  background-color: #bbdefb;
+}

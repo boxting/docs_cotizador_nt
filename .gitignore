@@ -4,10 +4,5 @@ __pycache__/
 .venv/
 venv/
 
-# site/ is built by CI and committed to main so GitHub Pages can serve it.
-# Ignore vendored theme assets that never change between content edits.
-site/css/fonts/
-site/js/html5shiv.min.js
-site/js/jquery-3.6.0.min.js
-site/js/theme.js
-site/js/theme_extra.js
+# Built site — deployed via GitHub Actions, not committed
+site/
